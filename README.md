@@ -1,4 +1,4 @@
-<title>AO3 Skin Cherry Pink Star</title>
+<h1>AO3 Skin Cherry Pink Star</h1>
 This skin needs input in the wizard location as well. There still issues but it is functional. Here are the inputs:
 
 <h2>Fonts and Whitespace</h2>
