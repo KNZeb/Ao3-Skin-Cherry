@@ -1,18 +1,26 @@
+/* For removing and highlight tags*/
+
+/* For removing below */
 .blurb:has(a[href$="/tags/Danny%20Phantom/works"]) {
   display: none !important;
 }
 
+/* For removing below */
 .blurb:has(a[href$="/tags/Reader/works"]) {
   display: none !important;
 }
 
+/* For removing below */
+.blurb:has(h5.fandoms):has(a.tag:nth-of-type(5)) {
+  display: none !important;
+}
+
+/*highlight tags below */
 .blurb:has(a[href$="/tags/Dazai%20Osamu%20*a*%20Nakajima%20Atsushi%20(Bungou%20Stray%20Dogs)/works"]) {
   color: #87CEEB;
 }
 
-.blurb:has(h5.fandoms):has(a.tag:nth-of-type(5)) {
-  display: none !important;
-}
+
 
 #header .heading a,
 #header .user a,
