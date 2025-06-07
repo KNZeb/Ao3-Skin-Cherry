@@ -1,4 +1,19 @@
-/*top button fix*/
+.blurb:has(a[href$="/tags/Danny%20Phantom/works"]) {
+  display: none !important;
+}
+
+.blurb:has(a[href$="/tags/Reader/works"]) {
+  display: none !important;
+}
+
+.blurb:has(a[href$="/tags/Dazai%20Osamu%20*a*%20Nakajima%20Atsushi%20(Bungou%20Stray%20Dogs)/works"]) {
+  color: #87CEEB;
+}
+
+.blurb:has(h5.fandoms):has(a.tag:nth-of-type(5)) {
+  display: none !important;
+}
+
 #header .heading a,
 #header .user a,
 #small_login .action {
@@ -7,12 +22,10 @@
   border-radius: 1em;
 }
 
-/*remove mute*/
 p.muted.notice {
   display: none;
 }
 
-/*bubble button*/
 .blurb .module,
 .listbox .blurb,
 .icon a {
@@ -48,8 +61,6 @@ a.tag:hover {
   background: #ff83ac;
 }
 
-/*background images*/
-
 #header {
   background-image: url(https://64.media.tumblr.com/b2bf6e9c5de4c06cf0cc24ab83e6c847/300e7ee40e7cbda9-07/s2048x3072/faf14a183602ecd0adcca9c7a9c248ac15d04580.png);
   background-size: 75% auto;
@@ -76,10 +87,6 @@ a.tag:hover {
   border-radius: 3em;
 }
 
-/* ===============================================================
-credit for icon code: cuephrase
-url(https://archiveofourown.org/collections/Ao3skin/works/54000925)
-=================================================================*/
 #header .heading a,
 #header .actions a:hover,
 #header .actions a:focus,
@@ -232,10 +239,6 @@ a.current,
 .current a:visited,
 #dashboard .current,
 .actions a:active,
-#outer .current,
-#header .current,
-a.current,
-.current a:visited,
 span.unread,
 .replied,
 span.claimed,
@@ -249,6 +252,18 @@ dl.index dd,
 .ui-sortable li:hover,
 #header .primary .menu .current {
   border-color: initial;
+  box-shadow: none !important;
+}
+
+.current,
+a.current,
+.current a:visited,
+#outer .current,
+#header .current,
+#header .primary .menu .current {
+  color: #ff81c0;
+  background: transparent;
+  border: 2.5px solid #ff81c0;
   box-shadow: none !important;
 }
 
@@ -407,7 +422,7 @@ dl.stats dd.language::before {
 }
 
 dl.stats dd.kudos::before {
-  background: url(https://64.media.tumblr.com/65d4f41aa3628ae2e3b4c1d3ff63a121/fb47cb665e930246-10/s75x75_c1/0240a9119a33ab6b76e7944be951e45577df3b75.png);
+  background: url(https://64.media.tumblr.com/9914ded3b93e12756178a0a769d9b6a0/33411bb43f12f467-cb/s100x200/0023b4d69bc10bd4c84e012e18855ff252a2a564.png);
 }
 
 dl.stats dd.words::before {
@@ -415,7 +430,7 @@ dl.stats dd.words::before {
 }
 
 dl.stats dd.chapters::before {
-  background: url(https://64.media.tumblr.com/68cd2a9507132c242f6126926ddd20c5/d9b14bd9ef815581-40/s75x75_c1/102c4f78f8a8b777235baf67ee303309869858ce.png);
+  background: url(https://64.media.tumblr.com/3f183ff8e8fdabd5e595b36e1ce7bb76/3a94df30b87c0ebf-b7/s75x75_c1/b41add81b56427394790edf3d8948f7458e006a6.png);
 }
 
 dl.stats dd.comments::before {
@@ -424,7 +439,7 @@ dl.stats dd.comments::before {
 
 dl.stats dd.bookmarks::before,
 dl.stats dd a[href$=bookmarks]::before {
-  background: url(https://64.media.tumblr.com/0604b5bbb71f2e4d783667a4a8675e36/d9b14bd9ef815581-3a/s75x75_c1/0fb1305e9edbeeb9fb8a7882a81a23fe8e9d1ee1.png);
+  background: url(https://64.media.tumblr.com/9ff9bba4a6870ea838d487f5d3df0242/5b04fdc728283428-50/s75x75_c1/337b99b725b3e4b64454388a343ec8054e06fb33.png);
 }
 
 dl.stats dd.hits::before {
@@ -487,11 +502,6 @@ dl.stats dd:not(.bookmarks) a[href$=bookmarks]::before {
   background-size: 14px 14px !important;
   margin-right: 5px;
 }
-/* =========================================
-credit Replace-the-AO3-Icons-2.0 by ZerafinaCSS 
-url(https://github.com/ZerafinaCSS/Replace-the-AO3-Icons-2.0/blob/main/Replace_AO3_icons_2.0.1_blue-berry.css) 
-=============================================*/
-/*Zeb changed colors*/
 
 ul.required-tags,
 .bookmark .status span,
@@ -794,4 +804,3 @@ img[src$="/images/lockblue.png"] {
   content: url("/images/logo.png");
   filter: brightness(0) saturate(100%) invert(62%) sepia(14%) saturate(1799%) hue-rotate(172deg) brightness(90%) contrast(86%);
 }
-
